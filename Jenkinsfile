@@ -25,7 +25,7 @@ pipeline {
             }
         }
 
-        # Building Docker images
+        // Building Docker images
     stage('Building image') {
       steps{
         script {
@@ -46,7 +46,7 @@ pipeline {
          }
         }
     
-        # Uploading Docker images into AWS ECR
+        // Uploading Docker images into AWS ECR
     stage('Pushing to ECR') {
      steps{  
          script {
@@ -55,5 +55,4 @@ pipeline {
          }
         }
       }
-
 }
